@@ -1,11 +1,9 @@
 import React from "react";
-import { Text, View } from "react-native";
-import { style } from './styles'
+import { Welcome } from "./src/Screens/Welcome";
+
 
 export default function App() {
   return (
-    <View style={style.container}>
-      <Text>Hello, World!</Text>
-    </View>
+    <Welcome />
   );
 }
