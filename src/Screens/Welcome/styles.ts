@@ -1,7 +1,8 @@
 import { StyleSheet } from "react-native";
-import colors from "../styles/colors";
+import colors from "../../styles/colors";
 
-export const style = StyleSheet.create({
+
+export const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: "space-between",
@@ -23,13 +24,4 @@ export const style = StyleSheet.create({
     color: colors.heading,
   },
 
-  button: {
-    backgroundColor: colors.green,
-    justifyContent: "center",
-    alignItems: "center",
-    borderRadius: 16,
-    marginBottom: 25,
-    height: 56,
-    width: 56,
-  }
 });
