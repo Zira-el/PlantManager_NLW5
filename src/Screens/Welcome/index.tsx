@@ -3,7 +3,7 @@ import { SafeAreaView, View, Text, Image, TouchableOpacity } from "react-native"
 import { styles } from "./styles";
 
 import wateringImg from '../../assets/watering.png';
-import { Button } from "../../Components/Button";
+import { Feather } from '@expo/vector-icons';
 
 export function Welcome() {
   return (
@@ -13,12 +13,26 @@ export function Welcome() {
         suas plantas de {`\n`}
         forma fácil
       </Text>
-      <Image source={wateringImg} />
+      <Image
+        source={wateringImg}
+        style={styles.image}
+        resizeMode="contain"
+      />
       <Text style={styles.subTitle}>
         Não esqueça mais de regar suas plantas.
         Nós cuidamos de lembrar você sempre que precisar.
       </Text>
-      < Button title="Avançar" />
+      <TouchableOpacity
+        style={styles.button}
+        activeOpacity={0.8}
+      >
+        <Text>
+          <Feather
+            name="chevron-right"
+            style={styles.buttonIcon}
+          />
+        </Text>
+      </TouchableOpacity>
     </SafeAreaView>
   )
 }
